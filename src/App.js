@@ -16,7 +16,7 @@ function App() {
 			<div className="wrapper">
 				{id ? (
 					<div className="barcode-page">
-						<h2 className="title id-wrapper">
+						{/* <h2 className="title id-wrapper">
 							{id}
 							<span
 								className="delete"
@@ -25,9 +25,9 @@ function App() {
 									localStorage.clear();
 								}}
 							>
-								X
+								x
 							</span>
-						</h2>
+						</h2> */}
 						<div className="barcode">
 							{Code39(id)
 								.toString()

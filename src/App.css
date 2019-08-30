@@ -1,6 +1,11 @@
+:root {
+  --main-bg-color: #fff; 
+  --primary-color: #000;
+}
+
 .wrapper {
   min-height: 100vh;
-  background: rgb(58, 58, 90);
+  background: var(--main-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +13,7 @@
 }
 
 .title {
-  color: rgb(73, 223, 153);
+  color: var(--primary-color);
 }
 
 .input {
@@ -25,37 +30,37 @@
   padding: 5px 10px;
   margin-top: 20px;
   background: none;
-  border: rgb(73, 223, 153) solid 1px;
-  color: rgb(73, 223, 153);
+  border: var(--primary-color) solid 1px;
+  color: var(--primary-color);
   box-shadow: 1px 2px 2.3px rgba(73, 223, 153, 0.7);
 }
 
 .barcode-page {
-  transform: rotate(90deg);
+  transform: scale(0.8) rotate(90deg);
+  transform-origin: center;
 }
 .id-wrapper {
   display: flex;
   justify-content: space-between;
 }
 .delete {
-  color: #ca4c3e73;
+  /* color: #ca4c3e73; */
   align-self: end;
 }
 .barcode {
   height: 100px;
-  width: 352px;
   display: flex;
   justify-content: space-evenly;
 }
 
 .barcode > .set {
   height: 100%;
-  width: 2px;
-  background: rgb(107, 212, 163);
+  width: 1.3pt;
+  background: var(--primary-color);
 }
 
 .barcode > .clear {
   height: 100%;
-  width: 2px;
+  width: 1.3pt;
 }
 

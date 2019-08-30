@@ -1,7 +1,7 @@
 export default (data) =>{
   console.log(data);
   data = data.toUpperCase();
-  data += getCharacter(mod43checksum(data));
+  // data += getCharacter(mod43checksum(data));
 
   var result = getEncoding("*");
 
@@ -49,20 +49,21 @@ function getBinary(characterValue){
 	return encodings[characterValue].toString(2);
 }
 
-function getCharacter(characterValue){
-	return characters[characterValue];
-}
 
 function characterValue(character){
-	return characters.indexOf(character);
+  return characters.indexOf(character);
 }
 
-function mod43checksum(data){
-	var checksum = 0;
-	for(let i = 0; i < data.length; i++){
-		checksum += characterValue(data[i]);
-	}
+// function getCharacter(characterValue){
+//   return characters[characterValue];
+// }
 
-	checksum = checksum % 43;
-	return checksum;
-}
+// function mod43checksum(data){
+// 	var checksum = 0;
+// 	for(let i = 0; i < data.length; i++){
+// 		checksum += characterValue(data[i]);
+// 	}
+
+// 	checksum = checksum % 43;
+// 	return checksum;
+// }
