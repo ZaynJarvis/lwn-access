@@ -25,7 +25,7 @@ function App() {
 									localStorage.clear();
 								}}
 							>
-								x
+								X
 							</span>
 						</h2>
 						<div className="barcode">

@@ -1,5 +1,4 @@
 export default (data) =>{
-  console.log(data);
   data = data.toUpperCase();
   // data += getCharacter(mod43checksum(data));
 
